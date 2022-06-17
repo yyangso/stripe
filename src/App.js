@@ -76,7 +76,7 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 2px solid var(--secondary);
+  border: 2px groove var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
@@ -208,14 +208,14 @@ function App() {
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.SpacerLarge />
           <s.Container
-            flex={2}
+            flex={1}
             jc={"center"}
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
               padding: 24,
               borderRadius: 24,
-              border: "4px dashed var(--secondary)",
+              border: "2px groove var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
