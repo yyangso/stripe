@@ -76,7 +76,7 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 5px groove var(--secondary);
+  border: 5px double #ccc;
   background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
@@ -90,7 +90,7 @@ export const StyledImg = styled.img`
 `;
 
 export const StyledLink = styled.a`
-  color: var(--secondary-link);
+  color: var(--secondary-link); 
   text-decoration: none;
 `;
 
