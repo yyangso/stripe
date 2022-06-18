@@ -14,6 +14,8 @@ export const StyledButton = styled.button`
   border: none;
   background-color: var(--secondary);
   padding: 10px;
+  font-family: 'LeferiPoint-BlackObliqueA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff');
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;
