@@ -14,8 +14,8 @@ export const StyledButton = styled.button`
   border: none;
   background-color: var(--secondary);
   padding: 10px;
-  font-family: 'LeferiPoint-BlackObliqueA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff');
+  font-family: 'DotGothic16', sans-serif;;
+  src: url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;
@@ -217,7 +217,7 @@ function App() {
               backgroundColor: "var(--accent)",
               padding: 24,
               borderRadius: 24,
-              border: "5px groove var(--primary)",
+              border: "5px duoble var(--primary)",
               // boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
