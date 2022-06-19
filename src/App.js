@@ -14,8 +14,8 @@ export const StyledButton = styled.button`
   border: none;
   background-color: var(--secondary);
   padding: 10px;
-  font-family: 'DotGothic16', sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;

@@ -124,17 +124,16 @@ table {
 }
 
 @font-face {
-  font-family: 'DotGothic16', sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
   /* font-family: "coder";
   src: local("coder"), url(font.woff) format("woff"); */
-}
-
 body {
   margin: 0;
-  font-family: 'DotGothic16', sans-serif;
+  font-family: 'DungGeunMo';
   /* font-family: "coder", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif; */
   -webkit-font-smoothing: antialiased;
@@ -148,7 +147,7 @@ body {
 }
 
 code {
-  font-family: 'DotGothic16', sans-serif;
+  font-family: 'DungGeunMo';
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace; */
 }
