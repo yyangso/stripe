@@ -124,8 +124,8 @@ table {
 }
 
 @font-face {
-  font-family: 'beanpoleotB00';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/beanpoleotB00.woff') format('woff');
+  font-family: 'EF_WAKEUP';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_WAKEUP.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -133,7 +133,7 @@ table {
   src: local("coder"), url(font.woff) format("woff"); */
 body {
   margin: 0;
-  font-family: 'beanpoleotB00';
+  font-family: 'EF_WAKEUP';
   /* font-family: "coder", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif; */
   -webkit-font-smoothing: antialiased;
@@ -147,7 +147,7 @@ body {
 }
 
 code {
-  font-family: 'beanpoleotB00';
+  font-family: 'EF_WAKEUP';
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace; */
 }

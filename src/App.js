@@ -14,8 +14,8 @@ export const StyledButton = styled.button`
   border: none;
   background-color: var(--secondary);
   padding: 10px;
-  font-family: 'beanpoleotB00';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/beanpoleotB00.woff') format('woff');
+  font-family: 'EF_WAKEUP';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_WAKEUP.woff2') format('woff2');
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;
