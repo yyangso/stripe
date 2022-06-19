@@ -124,16 +124,16 @@ table {
 }
 
 @font-face {
-    font-family: 'Galmuri';
-    src: url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css') format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'beanpoleotB00';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/beanpoleotB00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
   /* font-family: "coder";
   src: local("coder"), url(font.woff) format("woff"); */
 body {
   margin: 0;
-  font-family: 'Galmuri';
+  font-family: 'beanpoleotB00';
   /* font-family: "coder", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif; */
   -webkit-font-smoothing: antialiased;
@@ -147,7 +147,7 @@ body {
 }
 
 code {
-  font-family: 'Galmuri';
+  font-family: 'beanpoleotB00';
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace; */
 }

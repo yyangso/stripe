@@ -14,8 +14,8 @@ export const StyledButton = styled.button`
   border: none;
   background-color: var(--secondary);
   padding: 10px;
-  font-family: 'Galmuri';
-  src: url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css') format("woff");
+  font-family: 'beanpoleotB00';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/beanpoleotB00.woff') format('woff');
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;
