@@ -115,7 +115,7 @@ export const ResponsiveWrapper = styled.div`
   flex-direction: column;
   justify-content: stretched;
   align-items: stretched;
-  width: 70%;
+  width: 50%;
   @media (min-width: 767px) {
     flex-direction: row;
   }
@@ -255,7 +255,7 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--accent)" }}
+        style={{ padding: 24, backgroundColor: "var(--accent)"}}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
