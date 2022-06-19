@@ -124,8 +124,8 @@ table {
 }
 
 @font-face {
-  font-family: 'Wemakeprice-SemiBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-SemiBold.woff') format('woff');
+  font-family: 'MapoDPPA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoDPPA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -133,7 +133,7 @@ table {
   src: local("coder"), url(font.woff) format("woff"); */
 body {
   margin: 0;
-  font-family: 'Wemakeprice-SemiBold';
+  font-family: 'MapoDPPA';
   /* font-family: "coder", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif; */
   -webkit-font-smoothing: antialiased;
@@ -147,7 +147,7 @@ body {
 }
 
 code {
-  font-family: 'Wemakeprice-SemiBold';
+  font-family: 'MapoDPPA';
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace; */
 }

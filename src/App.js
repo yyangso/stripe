@@ -14,8 +14,8 @@ export const StyledButton = styled.button`
   border: none;
   background-color: var(--secondary);
   padding: 10px;
-  font-family: 'Wemakeprice-SemiBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-SemiBold.woff') format('woff');
+  font-family: 'MapoDPPA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoDPPA.woff') format('woff');
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;
