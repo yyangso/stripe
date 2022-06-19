@@ -124,8 +124,8 @@ table {
 }
 
 @font-face {
-  font-family: 'DotGothic16', sans-serif;;
-  src: url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');;
+  font-family: 'DotGothic16', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
   font-weight: normal;
   font-style: normal;
   /* font-family: "coder";
@@ -148,7 +148,7 @@ body {
 }
 
 code {
-  font-family: 'DotGothic16', sans-serif;;
+  font-family: 'DotGothic16', sans-serif;
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace; */
 }

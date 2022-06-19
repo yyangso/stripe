@@ -14,7 +14,7 @@ export const StyledButton = styled.button`
   border: none;
   background-color: var(--secondary);
   padding: 10px;
-  font-family: 'DotGothic16', sans-serif;;
+  font-family: 'DotGothic16', sans-serif;
   src: url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
   font-weight: bold;
   color: var(--secondary-text);
