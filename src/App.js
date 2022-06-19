@@ -15,7 +15,7 @@ export const StyledButton = styled.button`
   background-color: var(--secondary);
   padding: 10px;
   font-family: 'Gemunu Libre', sans-serif;;
-  src: url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap') format('woff');
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;

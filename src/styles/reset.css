@@ -125,7 +125,7 @@ table {
 
 @font-face {
     font-family: 'Gemunu Libre', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap') format('woff');
     font-weight: normal;
     font-style: normal;
 }
