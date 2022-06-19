@@ -2,8 +2,9 @@
   --primary: rgb(22, 137, 252);
   --primary-text: #ffffff;
   --secondary: #099efa;
-  --secondary-link: rgb(255, 255, 0);
+  --secondary-link: rgb(73, 2, 255);
   --secondary-text: #ffffff;
-  --accent: #6a6a6acd;
-  --accent-text: #ffffff;
+  --accent: #c0e3ed8a;
+  --accent-text: rgb(22, 2, 100);
+  
 }

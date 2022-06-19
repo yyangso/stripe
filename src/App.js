@@ -11,15 +11,21 @@ const truncate = (input, len) =>
 export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
-  border: none;
-  background-color: var(--secondary);
+  border: 1px solid #ccc;
+  background-color: white;
   padding: 10px;
+  outline: none;
   font-family: 'MapoDPPA';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoDPPA.woff') format('woff');
   font-weight: bold;
-  color: var(--secondary-text);
+  color: #0073ff;
   width: 100px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  overflow: hidden;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -28,13 +34,39 @@ export const StyledButton = styled.button`
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
   }
+  :after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  :hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  color: #fff;
+  }
+  :hover:after {
+    -webkit-transform: scale(2) rotate(180deg);
+    transform: scale(2) rotate(180deg);
+    background: #0073ff;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
 `;
 
 export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
-  border: none;
-  background-color: var(--primary);
+  border: 2px solid #000;
+  background-color: #ccc;
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
@@ -42,6 +74,8 @@ export const StyledRoundButton = styled.button`
   width: 30px;
   height: 30px;
   cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,6 +86,26 @@ export const StyledRoundButton = styled.button`
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
+  }
+  :hover {
+    background: trasparent;
+    color: #000;
+  }
+  :before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #ccc;
+    transition: all 0.3s ease;
+  }
+  :after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #ccc;
+    transition: all 0.3s ease;
   }
 `;
 
@@ -68,7 +122,7 @@ export const ResponsiveWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 200px;
+  width: 300px;
   @media (min-width: 767px) {
     width: 300px;
   }
@@ -78,7 +132,7 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 5px double #ccc;
+  border: 5px double var(--primary);
   background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
@@ -94,6 +148,7 @@ export const StyledImg = styled.img`
 export const StyledLink = styled.a`
   color: var(--secondary-link); 
   text-decoration: none;
+  font-weight: bold;
 `;
 
 function App() {
