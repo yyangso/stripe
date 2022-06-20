@@ -64,19 +64,22 @@ export const StyledButton = styled.button`
 
 export const StyledRoundButton = styled.button`
   padding: 10px;
-  border-radius: 100%;
-  border: 2px solid #000;
-  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background-color: white;
+  outline: none;
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
-  color: var(--primary-text);
+  color: #0073ff;
   width: 30px;
   height: 30px;
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
   display: flex;
+  z-index: 2;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 0px -2px rgba(250, 250, 250, 0.3);
@@ -87,35 +90,42 @@ export const StyledRoundButton = styled.button`
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
   }
-  :hover {
-    background: trasparent;
-    color: #000;
-  }
-  :before {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: #ccc;
-    transition: all 0.3s ease;
-  }
   :after {
     position: absolute;
-    content: "";
-    left: 0;
+    content: " ";
+    z-index: -1;
     top: 0;
-    background: #ccc;
+    left: 0;
+    width: 100%;
+    height: 100%;
     transition: all 0.3s ease;
+  }
+  :hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 3px 0 rgba(255,255,255,.5),
+    inset 4px 4px 3px 0 rgba(116, 125, 136, .3);
+  color: #fff;
+  }
+  :hover:after {
+    -webkit-transform: scale(2) rotate(180deg);
+    transform: scale(2) rotate(180deg);
+    background: #0073ff;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
   }
 `;
 
 export const ResponsiveWrapper = styled.div`
-  display: flex;
+  display: inline-block;
   flex: 1;
+  margin-top: 30px;
   flex-direction: column;
   justify-content: stretched;
   align-items: stretched;
-  width: 50%;
+  width: 70%;
   @media (min-width: 767px) {
     flex-direction: row;
   }
@@ -146,7 +156,8 @@ export const StyledImg = styled.img`
 `;
 
 export const StyledLink = styled.a`
-  color: var(--secondary-link); 
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff; 
   text-decoration: none;
   font-weight: bold;
 `;
@@ -255,7 +266,7 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--accent)"}}
+        style={{ padding: 0, backgroundColor: "var(--accent)"}}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
@@ -281,8 +292,11 @@ function App() {
                 textAlign: "center",
                 fontSize: 50,
                 fontWeight: "bold",
-                color: "var(--accent-text)",
+                color: "#02f0fc",
+                textShadow: "0 0 6px #02f0fc, 0 0 7px #02f0fc, 0 0 30px #02f0fc", 
+                
               }}
+          
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
             </s.TextTitle>
@@ -326,12 +340,12 @@ function App() {
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
                 <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  style={{ textAlign: "center", color: "var(--accent-text)", fontWeight: "bold"}}
                 >
                   The sale has ended.
                 </s.TextTitle>
                 <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  style={{ textAlign: "center", color: "var(--accent-text)", fontWeight: "bold"}}
                 >
                   You can still find {CONFIG.NFT_NAME} on
                 </s.TextDescription>
@@ -343,14 +357,24 @@ function App() {
             ) : (
               <>
                 <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  style={{ 
+                    textAlign: "center",
+                    fontWeight:"bold",
+                    color: "#fff",
+                    textShadow: "0 0 3px #fff, 0 0 21px #fff, 0 0 21px #fff",
+                  }}
                 >
                   1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  style={{
+                    textAlign: "center",
+                    fontWeight:"bold",
+                    color: "#fff",
+                    textShadow: "0 0 3px #fff, 0 0 21px #fff, 0 0 21px #fff", 
+                  }}
                 >
                   Excluding gas fees.
                 </s.TextDescription>
@@ -361,7 +385,9 @@ function App() {
                     <s.TextDescription
                       style={{
                         textAlign: "center",
-                        color: "var(--accent-text)",
+                        fontWeight:"bold",
+                        color: "#fff",
+                        textShadow: "0 0 3px #fff, 0 0 21px #fff, 0 0 21px #fff",
                       }}
                     >
                       Connect to the {CONFIG.NETWORK.NAME} network
@@ -382,7 +408,8 @@ function App() {
                         <s.TextDescription
                           style={{
                             textAlign: "center",
-                            color: "var(--accent-text)",
+                            fontWeight:"bold",
+                            color: "#fff",
                           }}
                         >
                           {blockchain.errorMsg}
@@ -395,7 +422,9 @@ function App() {
                     <s.TextDescription
                       style={{
                         textAlign: "center",
-                        color: "var(--accent-text)",
+                        fontWeight:"bold",
+                        color: "#fff",
+                        textShadow: "0 0 3px #fff, 0 0 21px #fff, 0 0 21px #fff",
                       }}
                     >
                       {feedback}
@@ -416,7 +445,10 @@ function App() {
                       <s.TextDescription
                         style={{
                           textAlign: "center",
-                          color: "var(--accent-text)",
+                          fontSize: 30,
+                          fontWeight: "bold",
+                          color: "#02f0fc",
+                          textShadow: "0 0 3px #02f0fc, 0 0 5px #02f0fc, 0 0 30px #02f0fc", 
                         }}
                       >
                         {mintAmount}
@@ -455,11 +487,12 @@ function App() {
         
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+        <s.Container jc={"center"} ai={"center"} style={{ width: "50%", margin:"20px"}}>
           <s.TextDescription
             style={{
               textAlign: "center",
               color: "var(--primary-text)",
+              fontWeight: "bold",
             }}
           >
             Please make sure you are connected to the right network (
@@ -471,6 +504,7 @@ function App() {
             style={{
               textAlign: "center",
               color: "var(--primary-text)",
+              fontWeight: "bold"
             }}
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
