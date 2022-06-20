@@ -7,6 +7,7 @@ export const Screen = styled.div`
   background-size: cover;
   background-position: center;
   min-width: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
 `;
