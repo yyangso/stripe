@@ -125,6 +125,7 @@ export const ResponsiveWrapper = styled.div`
   justify-content: stretched;
   align-items: stretched;
   width: 70%;
+  height: 50%;
   @media (min-width: 767px) {
     flex-direction: row;
   }
@@ -272,7 +273,7 @@ function App() {
           <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         </a>
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+        <ResponsiveWrapper flex={1} style={{ padding: 24}} test>
           <s.SpacerLarge />
           <s.Container
             flex={1}
@@ -486,7 +487,7 @@ function App() {
         
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "50%", display: "inline-block", margin: "30px 0"}}>
+        <s.Container jc={"center"} ai={"center"} style={{ width: "50%", display: "inline-block", margin: "80px 0"}}>
           <s.TextDescription
             style={{
               textAlign: "center",
