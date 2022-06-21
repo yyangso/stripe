@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Screen = styled.div`
   background-color: var(--primary);
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   min-height: 100vh;
   display: flex;
