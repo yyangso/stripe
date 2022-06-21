@@ -486,7 +486,7 @@ function App() {
         
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "50%"}}>
+        <s.Container jc={"center"} ai={"center"} style={{ width: "50%", display: "inline-block", margin: "30px 0"}}>
           <s.TextDescription
             style={{
               textAlign: "center",
@@ -503,7 +503,7 @@ function App() {
             style={{
               textAlign: "center",
               color: "var(--primary-text)",
-              fontWeight: "bold"
+              fontWeight: "bold",
             }}
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
